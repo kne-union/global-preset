@@ -18,7 +18,7 @@ Provider.defaultProps = {
 
 const usePreset = () => {
     const preset = useContext(context);
-    return preset.current;
+    return preset.current || {};
 };
 
 export {Provider, usePreset};
