@@ -12,6 +12,10 @@ const Provider = ({value, children}) => {
     </ReactProvider>
 };
 
+Provider.defaultProps = {
+    value: {}
+};
+
 const usePreset = () => {
     const preset = useContext(context);
     return preset.current;
